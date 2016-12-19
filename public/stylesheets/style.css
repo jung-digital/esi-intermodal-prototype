@@ -1,5 +1,10 @@
+@font-face {
+  font-family: Gotham;
+  src: url(./fonts/Gotham-Book.otf);
+}
+
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Gotham", Helvetica, Arial, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -9,6 +14,7 @@ a {
 }
 
 .header {
+  color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -20,6 +26,15 @@ a {
   background: -webkit-linear-gradient(top,  rgba(0,0,0,0.91) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  rgba(0,0,0,0.91) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.logo {
+  margin: 12px auto;
+  width: 52px;
+}
+
+.logo img {
+  width: 52px;
 }
 
 .body-content {

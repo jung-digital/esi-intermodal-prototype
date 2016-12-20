@@ -1,6 +1,21 @@
 extends layout
 
 block content
-  div.hero.rel
-    div.get-quote.abs
+  .hero
+    .body-content
+      .get-quote
+        h1 GET A QUOTE
+        h2 Get the container you have always wanted >>
+      .welcome
+        h1 Welcome Back
+        .gap
+          input(type='text', placeholder='Username')
+        .gap
+          input(type='text', placeholder='Password')
+        .gap
+          label
+            input(type='checkbox')
+            span Remember Me
+        .gap
+          button Sign in
 

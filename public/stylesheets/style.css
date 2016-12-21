@@ -174,10 +174,36 @@ a {
 }
 
 .get-started .box {
+  position: relative;
   width: 125px;
   height: 125px;
   margin: 0 auto;
   padding: 25px;
+  cursor: pointer;
+}
+
+.get-started .box .box-grower {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.25s;
+}
+
+.get-started .box .box-grower:hover {
+  left: -8px;
+  right: -8px;
+  top: -8px;
+  bottom: -8px;
+}
+
+.get-started .box .box-grower img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -62.5px;
+  margin-top: -62.5px;
 }
 
 .get-started .resource-library {
@@ -212,9 +238,27 @@ a {
   height: 150px;
   background: white;
   margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.step h1 {
+  text-align: center;
+  width: 78%;
+  padding: 37px 11%;
+  margin: 0;
+}
+
+.steps .step:hover {
+  width: 85%;
+}
+
+.steps .step:hover h1 {
+  color: #AAA;
 }
 
 .steps .step-1 {
+  color: #ff9d4c;
   border-left: 2px solid #ff9d4c;
   border-top: 2px solid #ff9d4c;
   border-bottom: 2px solid #ff9d4c;
@@ -228,6 +272,7 @@ a {
 }
 
 .steps .step-2 {
+  color: #00bcb1;
   border-top: 2px solid #00bcb1;
   border-bottom: 2px solid #00bcb1;
 }
@@ -247,6 +292,7 @@ a {
 }
 
 .steps .step-3 {
+  color: #ff5453;
   border-top: 2px solid #ff5453;
   border-right: 2px solid #ff5453;
   border-bottom: 2px solid #ff5453;

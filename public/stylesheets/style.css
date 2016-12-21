@@ -21,6 +21,10 @@ input[type='text'] {
   text-align: center;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .flex {
   display: flex;
 }
@@ -42,7 +46,7 @@ input[type='text'] {
 .body-content {
   position: relative;
   width: 100%;
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -56,44 +60,72 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
+  height: 120px;
   z-index: 1000;
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+34,0.85+61,0+100 */
+  background-color: white;
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,0.85) 61%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 34%,rgba(255,255,255,0.85) 61%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 34%,rgba(255,255,255,0.85) 61%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+  transition: height 0.5s;
 }
 
-.btn-menu {
+.header-scrolled {
+  background: white;
+  border-bottom: 2px solid #00bcb1;
+  height: 62px;
+}
+
+.header .btn-menu {
   position: absolute;
   left: 5%;
-  top: 0;
+  top: 10px;
+  font-size: 24px;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
-.logo {
+.header .logo {
+  position: relative;
   margin: 12px auto;
+  width: 110px;
+  transition: all 0.5s;
+}
+
+.header.header-scrolled .logo {
   width: 75px;
+}
+
+.header.header-scrolled .btn-menu {
+  top: 5px;
+  font-size: 22px;
 }
 
 .logo img {
-  width: 75px;
+  width: 100%;
 }
 
-.signin {
+.header .signin {
   position: absolute;
-  right: 10%;
-  top: 0;
+  right: 15%;
+  top: 15px;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
-.search {
+.header .search {
   position: absolute;
   right: 5%;
-  top: 0;
+  top: 15px;
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+.header.header-scrolled .signin,
+.header.header-scrolled .search {
+  top: 11px;
 }
 
 .hero {
@@ -116,6 +148,12 @@ a {
   background: rgba(0,0,0,0.5);
   padding: 2em;
   color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.get-quote:hover {
+  background: rgba(0,0,0,0.6);
 }
 
 .welcome {
@@ -228,8 +266,14 @@ a {
 
 .steps {
   background-color: #f4f4f4;
-  height: 400px;
+  height: 270px;
   padding-top: 50px;
+}
+
+.steps h1 {
+  margin: 0;
+  font-weight: 100;
+  margin-bottom: 25px;
 }
 
 .steps .step {
@@ -303,4 +347,121 @@ a {
   left: -28px;
   top: -2px;
   height: 154px;
+}
+
+.news {
+  background-color: #fbf9f9;
+  border-bottom: 3px solid white;
+  padding-bottom: 50px;
+}
+
+.news h1 {
+  text-align: center;
+  width: 78%;
+  padding: 37px 11%;
+  margin: 0;
+  font-weight: 100;
+  margin-bottom: 25px;
+}
+
+.news .section {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  margin: 20px 100px;
+}
+
+.news .section .date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 110px;
+  height: 110px;
+  line-height: 100px;
+  text-align: center;
+  background-color: #ff5453;
+}
+
+.news .section .event-table {
+  margin-left: 130px;
+  display: table;
+  height: 110px;
+  width: calc(100% - 320px);
+}
+
+.news .section .event-cell {
+  display: table-cell;
+  color: #333;
+  vertical-align: middle;
+}
+
+.mission {
+  background-color: #f4f4f4;
+  padding-bottom: 50px;
+}
+
+.mission .body-content {
+  max-width: 850px;
+}
+
+.mission h1 {
+  text-align: center;
+  width: 78%;
+  padding: 37px 11%;
+  margin: 0;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.mission .text {
+  font-weight: 100;
+  font-size: 14px;
+  color: #777;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+.mission .text-col {
+  font-weight: 100;
+  font-size: 14px;
+  color: #777;
+  line-height: 20px;
+  letter-spacing: 1.25px;
+}
+
+.mission .text-col.one {
+  margin-right: 10px;
+  width: 50%;
+}
+
+.mission .text-col.two {
+  margin-left: 10px;
+  width: 50%;
+}
+
+.footer {
+  color: white;
+  line-height: 24px;
+  background-color: #2482af;
+  height: 300px;
+}
+
+.footer .col {
+  width: 50%;
+  margin-top: 25px;
+}
+
+.footer .col a {
+  margin-left: 10px;
+  color: white;
+  display: block;
+  font-weight: 100;
+}
+
+.footer .col.one {
+
+}
+
+.footer .col.two {
+  text-align: right;
 }

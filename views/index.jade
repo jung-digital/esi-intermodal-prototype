@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  .hero
+  .hero.body-section
     .body-content
       .get-quote
         h1 GET A QUOTE
@@ -18,4 +18,38 @@ block content
             span Remember Me
         .gap
           button Sign in
+  .get-started.body-section
+    .body-content
+      h1.ta-center GET STARTED
+      .flex.flex-row
+        .flex-hor
+          .resource-library.box
+            img(src='/images/icon-resources.png')
+          h2 RESOURCE LIBRARY
+        .flex-hor
+          .get-a-quote.box
+            img(src='/images/icon-quote.png')
+          h2 GET A QUOTE
+        .flex-hor
+          .faq.box
+            img(src='/images/icon-faq.png')
+          h2 FAQ
+        .flex-hor
+          .locations.box
+            img(src='/images/icon-location.png')
+          h2 LOCATIONS
+  .steps.body-section
+    h1.ta-center THREE EASY STEPS
+    .flex.flex-row
+      .flex-hor.mw-300
+        .step.step-1
+          img.right(src='/images/step-1-right.jpg')
+      .flex-hor.mw-300
+        .step.step-2
+          img.left(src='/images/step-2-left.jpg')
+          img.right(src='/images/step-2-right.jpg')
+      .flex-hor.mw-300
+        .step.step-3
+          img.left(src='/images/step-3-left.jpg')
+
 

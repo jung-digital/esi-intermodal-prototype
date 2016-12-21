@@ -17,6 +17,28 @@ input[type='text'] {
   font-size: 18px;
 }
 
+.ta-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-hor {
+  flex: 1;
+}
+
+.body-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .body-content {
   position: relative;
   width: 100%;
@@ -29,46 +51,49 @@ a {
 }
 
 .header {
-  color: white;
+  color: black;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 75px;
+  height: 90px;
   z-index: 1000;
 
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.91+0,0+100;Neutral+Density */
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0.91) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.91) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0.91) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+34,0.85+61,0+100 */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,0.85) 61%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 34%,rgba(255,255,255,0.85) 61%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 34%,rgba(255,255,255,0.85) 61%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 .btn-menu {
   position: absolute;
-  left: 0;
+  left: 5%;
   top: 0;
+  cursor: pointer;
 }
 
 .logo {
   margin: 12px auto;
-  width: 52px;
+  width: 75px;
 }
 
 .logo img {
-  width: 52px;
+  width: 75px;
 }
 
 .signin {
   position: absolute;
   right: 10%;
   top: 0;
+  cursor: pointer;
 }
 
 .search {
   position: absolute;
-  right: 0;
+  right: 5%;
   top: 0;
+  cursor: pointer;
 }
 
 .hero {
@@ -84,7 +109,7 @@ a {
 
 .get-quote {
   position: absolute;
-  width: 40%;
+  width: 35%;
   bottom: 0;
   left: 10%;
   height: 50%;
@@ -115,7 +140,7 @@ a {
   padding: 0;
 }
 
-.welcome input {
+.welcome input[type='text'] {
   width: calc(100% - 1em);
 }
 
@@ -127,4 +152,109 @@ a {
   font-size: 20px;
   color: white;
   font-weight: 100;
+}
+
+.get-started {
+  background-color: #fbf9f9;
+  height: 330px;
+  padding-top: 50px;
+}
+
+.get-started h1 {
+  margin: 0;
+  font-weight: 100;
+  margin-bottom: 25px;
+}
+
+.get-started h2 {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.get-started .box {
+  width: 125px;
+  height: 125px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.get-started .resource-library {
+  background-color: #00bcb1;
+}
+
+.get-started .get-a-quote {
+  background-color: #ff5453;
+}
+
+.get-started .faq {
+  background-color: #ff9d4c;
+}
+
+.get-started .locations {
+  background-color: #2482af;
+}
+
+.mw-300 {
+  min-width: 300px;
+}
+
+.steps {
+  background-color: #f4f4f4;
+  height: 400px;
+  padding-top: 50px;
+}
+
+.steps .step {
+  position: relative;
+  width: 80%;
+  height: 150px;
+  background: white;
+  margin: 0 auto;
+}
+
+.steps .step-1 {
+  border-left: 2px solid #ff9d4c;
+  border-top: 2px solid #ff9d4c;
+  border-bottom: 2px solid #ff9d4c;
+}
+
+.steps .step-1 .right {
+  position: absolute;
+  right: -28px;
+  top: -2px;
+  height: 154px;
+}
+
+.steps .step-2 {
+  border-top: 2px solid #00bcb1;
+  border-bottom: 2px solid #00bcb1;
+}
+
+.steps .step-2 .left {
+  position: absolute;
+  left: -28px;
+  top: -2px;
+  height: 154px;
+}
+
+.steps .step-2 .right {
+  position: absolute;
+  right: -28px;
+  top: -2px;
+  height: 154px;
+}
+
+.steps .step-3 {
+  border-top: 2px solid #ff5453;
+  border-right: 2px solid #ff5453;
+  border-bottom: 2px solid #ff5453;
+}
+
+.steps .step-3 .left {
+  position: absolute;
+  left: -28px;
+  top: -2px;
+  height: 154px;
 }

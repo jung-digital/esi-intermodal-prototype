@@ -33,7 +33,7 @@ html.lock {
 
 .menu-col {
   position: fixed;
-  background-color: #333333;
+  background-color: #f4f4f4;
   color: white;
   top: 0px;
   width: 0px;
@@ -41,7 +41,7 @@ html.lock {
   z-index: 2000;
   transition: all 0.75s;
   overflow: hidden;
-  border-right: 5px solid white;
+  border-right: 2px solid #00bcb1;
   padding-top: 50px;
 }
 
@@ -59,6 +59,35 @@ html.lock {
   right: 15px;
   font-size: 24px;
   cursor: pointer;
+  color: #333333;
+}
+
+.menu-col .top-list {
+  margin: 0;
+  padding: 0;
+
+}
+.menu-col .top-level {
+  list-style-type: none;
+  text-align: center;
+  display: block;
+  padding: 1.5em 0;
+  background: #e4e4e4;
+  color: #333333;
+  transition: padding 0.5s ease, background-color 0.5s ease, font-size 0.5s ease;
+  border-top: 2px solid #f4f4f4;
+}
+
+.top-level:last-child {
+  border-bottom: 2px solid #f4f4f4;
+}
+
+.top-level:hover {
+  font-size: 18px;
+  background-color: #00bcb1;
+  padding: 1.5em 0;
+  cursor: pointer;
+  transition: padding 0.5s ease, background-color 0.5s ease, font-size 0.5s ease;
 }
 
 input[type='text'] {

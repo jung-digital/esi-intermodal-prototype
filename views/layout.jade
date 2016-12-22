@@ -8,15 +8,22 @@ html
   body
     .header
       .body-content
-        .btn-menu
+        .btn-menu(onclick='toggleMenu()')
           i.fa.fa-bars
         .logo
           img(src='images/logo-small.png')
         .signin Sign in
         .search
           i.fa.fa-search
-
     block content
+    .body-shield(onclick='toggleMenu()')
+    .menu-col
+      .contents
+        ul
+          li Item 1
+          li Item 2
+          li Item 3
+      i.fa.fa-close(onclick='toggleMenu()')
 
     script(src='/jquery/dist/jquery.min.js')
     script(src='/javascripts/main.js')

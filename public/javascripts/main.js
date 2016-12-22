@@ -7,3 +7,9 @@ $(window).scroll(function (event) {
     $('.header').removeClass('header-scrolled');
   }
 });
+
+window.toggleMenu = function() {
+  $('.menu-col').toggleClass('open');
+  $('.body-shield').toggleClass('open');
+  $('html').toggleClass('lock');
+};
